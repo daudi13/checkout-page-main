@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
+@import "./Helpers/_mixins.scss";
+@import "./Helpers/_variable.scss";
+@import "./Helpers/_mixins.scss";
+
+
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+
+    .container {
+        width: 1440px;
+        padding: 64px 240px 100px;
+        margin: 0 auto;
+
+        .heading {
+            font-size: 36px;
+            color: $grey;
+            margin-bottom: 50.94px;
+        }
+
+        main {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .main-items {
+            order: 2;
+            background: #f2f2f2;
+            border-radius: 12px;
+            padding: 30px;
+
+            .item-box {
+                display: flex;
+                width: 100%;
+
+                img {
+                    width: 134.21px;
+                    height: 136.27px;
+                    border-radius: 13px;
+                    margin-right: 20.19px;
+                }
+
+                .name-price {
+                    flex: 1;
+
+                    .name-price__name {
+                        font-size: 16px;
+                        color: $grey;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                .tags {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+
+                    .name-price__price {
+                        font-size: 16px;
+                        font-weight: 600;
+                        color: $orng;
+                    }
+
+                    .slash {
+                        font-size: 12px;
+                    }
+                }
+
+                .btn-container {
+                    margin-top: 33.5px;
+                    min-width: 100%;
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    padding: 15px 20px;
+                    border: 1px solid black;
+                    border-radius: 12px;
+
+                    .box {
+                        height: 21.2px;
+                        width: 21.2px;
+
+                    }
+                }
+            }
+
+            .item-box + .item-box {
+                margin-top: 31px;
+            }
+
+            .shipping-total {
+                margin-top: 95.29px;
+
+                .shipping-total__box {
+                    display: flex;
+                    justify-content: space-between;
+                    padding: 10px 0;
+                    border-top: 1px solid #bdbdbd;
+                }
+            }
+        }
+
+        .form-container {
+            order: 1;
+            max-width: 456px;
+
+            form + form {
+                margin-top: 50px;
+            }
+
+            form {
+
+                .sub-title {
+                    font-size: 18px;
+                    margin-bottom: 15px;
+                    color: $grey;
+                }
+
+                .form-row + .form-row {
+                    margin-top: 20px;
+                }
+
+                .row {
+
+                    label {
+                        font-size: 12px;
+                        color: $grey-1;
+                    }
+
+                    input {
+                        width: 100%;
+                        padding: 18px 15px;
+                        border-radius: 12px;
+                        font-size: 16px;
+                        // font-family: ;
+                        outline: none;
+                        border: 1px solid $grey;
+                    }
+
+                }
+
+                .box-two {
+                    display: flex;
+                    justify-items: center;
+                    margin-top: 20px;
+                    max-width: 456px;
+
+                    .form-row + .form-row {
+                        margin-top: 0;
+                        margin-left: 31px;
+                    }
+
+                    .form-row {
+
+                        label {
+                            font-size: 12px;
+                            color: $grey;
+                        }
+
+                        input {
+                            width: 100%;
+                            padding: 18px 15px;
+                            border-radius: 12px;
+                            font-size: 16px;
+                            outline: none;
+                            border: 1px solid $grey;
+                        }
+                    }
+                }
+            }
+
+            .form-footer {
+                display: flex;
+                flex-direction: column;
+
+                .btn {
+                    width: 166px;
+                    align-self: flex-end;
+                    padding: 17px 45px;
+                    outline: none;
+                    border: 1px solid $orng;
+                    background: $orng;
+                }
+            }
+        }
+
+    }
+}
+

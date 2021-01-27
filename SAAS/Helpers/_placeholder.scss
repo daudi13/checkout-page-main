@@ -1,0 +1,17 @@
+%button-1 {
+    display: inline-block;
+    width: 135px;
+    word-spacing: 38px;
+    padding: 20px 10px;
+    font-size: 16px;
+    font-weight: 600;
+    outline: none;
+    border: 0;
+    box-shadow: $bs;
+}
+
+
+%button-2 {
+    @extend %button-1;
+    background: $orng;
+}

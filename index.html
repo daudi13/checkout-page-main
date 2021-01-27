@@ -25,26 +25,42 @@
       integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
 
     <title>Checkout page</title>
+
+    <link rel="stylesheet" href="./SAAS/main.css">
   </head>
   <body>
   <div class="container">
+    <h1 class="heading">Checkout</h1>
     <main>
-      <h1 class="heading">Checkout</h1>
       <div class="main-items">
-        <div class="item-box box-1">
+        <div class="item-box">
           <img src="./photo1.png" alt="">
           <div class="name-price">
             <p class="name-price__name">Vintage Backbag</p>
-            <p class="name-price__price">$54.99</p><span class="slash"><s>$94.99</s></span>
-            <button>- 1 +</button>
+            <div class="tags">
+              <p class="name-price__price">$54.99</p>
+              <p class="slash"><s>$94.99</s></p>
+            </div>
+            <div class="btn-container">
+              <div class="box"> <p>-</p></div>
+              <p>1</p>
+              <div class="box box-2">+</div>
+            </div>
           </div>
         </div>
-        <div class="item-box box-2">
+        <div class="item-box ">
           <img src="./photo2.png" alt="">
           <div class="name-price">
-            <p class="name-price__name">Levi Shoe</p>
-            <p class="name-price__price">$74.99</p><span class="slash"><s>124.99</s></span>
-            <button>- 1 +</button>
+            <p class="name-price__name">Leviahe shoesklll</p>
+            <div class="tags">
+              <p class="name-price__price">$74.99</p>
+              <span class="slash"><s>$124.99</s></span>
+            </div>
+            <div class="btn-container">
+              <div class="box">-</div>
+              <p>1</p>
+              <div class="box box-2">+</div>
+            </div>
           </div>
         </div>
         <div class="shipping-total">
@@ -59,35 +75,37 @@
         </div>
       </div>
       <div class="form-container">
-        <h2 class="sub-title">Contact infomation</h2>
+        
         <form action="PHP">
-          <div class="form-row">
+          <h2 class="sub-title">Contact infomation</h2>
+          <div class="form-row row">
             <label for="email">E-mail</label><br/>
-            <input type="email" name="email" id="email" class="fas" placeholder="&#xf0e0; Enter your email..."/>
+            <input type="email" name="email" id="email" class="fas" placeholder="&#xf0e0;   Enter your email..."/>
           </div>
-          <div class="form-row">
+          <div class="form-row row">
             <label for="phone">Phone</label> <br/>
-            <input type="tel" name="phone" id="phone" class="fas" placeholder="&#xf879; Enter your phone..."/>
+            <input type="tel" name="phone" id="phone" class="fas" placeholder="&#xf879;   Enter your phone..."/>
           </div>
         </form>
-        <h2 class="sub-title">Shipping address</h2><br/>
+        
         <form action="PHP">
-          <div class="form-row">
+          <h2 class="sub-title">Shipping address</h2>
+          <div class="form-row row">
             <label for="name">Full name</label><br/>
-            <input type="text" name="text" id="text" class="fas" placeholder="&#xf2bd; Rodney Cotton"/>
+            <input type="text" name="text" id="text" class="fas" placeholder="&#xf2bd;   Rodney Cotton"/>
           </div>
-          <div class="form-row">
+          <div class="form-row row">
             <label for="address">Address</label><br/>
-            <input type="text" name="text" id="text" class="fas" placeholder="&#xf015; your address"/>
+            <input type="text" name="text" id="text" class="fas" placeholder="&#xf015;   Your address"/>
           </div>
-          <div class="form-row">
+          <div class="form-row row">
             <label for="City">City</label><br/>
-            <input type="text" class="fas" name="text" id="text" placeholder="&#xf64f; Your city"/>
+            <input type="text" class="fas" name="text" id="text" placeholder="&#xf64f;   Your city"/>
           </div>
           <div class="box-two">
             <div class="form-row">
               <label for="contry">Country</label><br/>
-              <input type="text" name="country" list="country" class="fas" placeholder="&#xf64f; Country">
+              <input type="text" name="country" list="country" class="fas" placeholder="&#xf64f;   Country">
               <datalist id="country">
                 <option value="Kenya"></option>
                 <option value="Uganda"></option>
@@ -95,15 +113,20 @@
                 <option value="Rwanda"></option>
                 <option value="Ethopia"></option>
               </datalist>
+              </div>
+              <div class="form-row">
               <label for="Postal code">Postal code</label><br/>
-              <input type="text" name="number" id="number" class="fas" placeholder="&#xf658; Postal code">
+              <input type="text" name="number" id="number" class="fas" placeholder="&#xf658;   Postal code">
             </div>
-            <div class="form-row"></div>
           </div>
         </form>
+        <div class="form-footer">
+          <div class="form-row">
         <input type="checkbox" name="checkbox" id="checkbox">
         <label for="checkbox">Save this information for next time</label>
+        </div>
         <button class="btn">continue</button>
+        </div>
       </div>
     </main>
   </div>
