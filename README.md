@@ -36,7 +36,7 @@
 
 ## Overview
 
-![screenshot](https://user-images.githubusercontent.com/16707738/92399059-5716eb00-f132-11ea-8b14-bcacdc8ec97b.png)
+![screenshot](https://github.com/daudi13/checkout-page-main/blob/main/Screenshot%20from%202021-01-27%2017-19-28.png.png)
 
 This project was inspired by the many e-commerce shopping sites. the project depics a checkout page. The project was built by HTML CSS and SAAS
 
