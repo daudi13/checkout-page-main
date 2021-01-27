@@ -24,16 +24,29 @@ body {
         padding: 64px 240px 100px;
         margin: 0 auto;
 
+        @media screen and (max-width: 700px) {
+            max-width: 375px;
+            padding: 18px 32px;
+        }
+
         .heading {
             font-size: 36px;
             color: $grey;
             margin-bottom: 50.94px;
+
+            @media screen and (max-width: 700px) {
+                font-size: 24px;
+            }
         }
 
         main {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+
+            @media screen and (max-width: 700px) {
+                flex-direction: column;
+            }
         }
 
         .main-items {
@@ -41,6 +54,11 @@ body {
             background: #f2f2f2;
             border-radius: 12px;
             padding: 30px;
+
+            @media screen and (max-width: 700px) {
+                order: 1;
+                margin-bottom: 39px;
+            }
 
             .item-box {
                 display: flex;
@@ -51,6 +69,12 @@ body {
                     height: 136.27px;
                     border-radius: 13px;
                     margin-right: 20.19px;
+
+                    @media screen and (max-width: 700px) {
+                        width: 122.75px;
+                        height: 124.64px;
+                        margin-right: 18.84px;
+                    }
                 }
 
                 .name-price {
@@ -60,21 +84,35 @@ body {
                         font-size: 16px;
                         color: $grey;
                         margin-bottom: 10px;
+
+                        @media screen and (max-width: 700px) {
+                            font-size: 12px;
+
+                        }
                     }
                 }
 
                 .tags {
-                    display: grid;
-                    grid-template-columns: repeat(2, 1fr);
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
 
                     .name-price__price {
                         font-size: 16px;
                         font-weight: 600;
                         color: $orng;
+
+                        @media screen and (max-width: 700px) {
+                            font-size: 14px;
+                        }
                     }
 
                     .slash {
                         font-size: 12px;
+
+                        @media screen and (max-width: 700px) {
+                            font-size: 10px;
+                        }
                     }
                 }
 
@@ -85,29 +123,53 @@ body {
                     justify-content: space-between;
                     align-items: center;
                     padding: 15px 20px;
-                    border: 1px solid black;
+                    border: 1px solid #828282;
                     border-radius: 12px;
 
+                    @media screen and (max-width: 700px) {
+                        width: 122.8px;
+
+                    }
+
                     .box {
+                        text-align: center;
                         height: 21.2px;
                         width: 21.2px;
+                        background: #f2f2f2;
+                    }
 
+                    .box-2 {
+                        padding-top: 2.1px;
                     }
                 }
             }
 
             .item-box + .item-box {
                 margin-top: 31px;
+
+                @media screen and (max-width: 700px) {
+                    margin-top: 28.89px;
+                }
             }
 
             .shipping-total {
                 margin-top: 95.29px;
+
+                @media screen and (max-width:700px) {
+                    margin-top: 87.15px;
+                }
 
                 .shipping-total__box {
                     display: flex;
                     justify-content: space-between;
                     padding: 10px 0;
                     border-top: 1px solid #bdbdbd;
+
+                    @media screen and (max-width: 700px) {
+                        p {
+                            font-size: 14px;
+                        }
+                    }
                 }
             }
         }
@@ -126,6 +188,11 @@ body {
                     font-size: 18px;
                     margin-bottom: 15px;
                     color: $grey;
+
+                    @media screen and (max-width: 700px) {
+                        font-size: 14px;
+                        margin-bottom: 11.19px;
+                    }
                 }
 
                 .form-row + .form-row {
@@ -137,6 +204,12 @@ body {
                     label {
                         font-size: 12px;
                         color: $grey-1;
+                        margin-bottom: 6.97px;
+
+                        @media screen and (max-width: 700px) {
+                            font-size: 10px;
+                            margin-bottom: 5.23px;
+                        }
                     }
 
                     input {
@@ -144,9 +217,13 @@ body {
                         padding: 18px 15px;
                         border-radius: 12px;
                         font-size: 16px;
-                        // font-family: ;
                         outline: none;
                         border: 1px solid $grey;
+
+                        @media screen and (max-width: 700px) {
+                            padding: 13.85px 11.75px;
+                            font-size: 12px;
+                        }
                     }
 
                 }
@@ -167,6 +244,13 @@ body {
                         label {
                             font-size: 12px;
                             color: $grey;
+                            margin-bottom: 6.97px;
+
+                            @media screen and (max-width: 700px) {
+                                font-size: 10px;
+                                margin-bottom: 5.23px;
+
+                            }
                         }
 
                         input {
@@ -176,6 +260,11 @@ body {
                             font-size: 16px;
                             outline: none;
                             border: 1px solid $grey;
+
+                            @media screen and (max-width: 700px) {
+                                padding: 13.85px 11.75px;
+                                font-size: 12px;
+                            }
                         }
                     }
                 }
@@ -184,6 +273,21 @@ body {
             .form-footer {
                 display: flex;
                 flex-direction: column;
+                margin-top: 20px;
+                justify-content: center;
+
+                @media screen and (max-width: 700px){
+                    margin-top: 16.95px;
+                }
+
+                label {
+                    font-size: 12px;
+                    color: $grey-1;
+
+                    @media screen and (max-width: 700px) {
+                        font-size: 10px;
+                    }
+                }
 
                 .btn {
                     width: 166px;
@@ -192,6 +296,11 @@ body {
                     outline: none;
                     border: 1px solid $orng;
                     background: $orng;
+                    color: #f2f2f2;
+                    font-size: 16px;
+                    border-radius: 12px;
+                    font-family: inherit;
+                    margin-top: 23px;
                 }
             }
         }
